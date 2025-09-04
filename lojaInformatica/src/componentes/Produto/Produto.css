@@ -1,0 +1,86 @@
+.produto {
+  width: 280px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  background: white;
+  position: relative;
+}
+
+.produto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.produto .cabecalho {
+  background-color: #f8f9fa;
+  padding: 60px 20px 20px 20px;
+  text-align: center;
+  position: relative;
+  min-height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-marca {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.status {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #27ae60;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  z-index: 2;
+}
+
+.status.usado {
+  background: #e74c3c;
+}
+
+.produto .rodape {
+  padding: 20px;
+  text-align: center;
+}
+
+.produto .rodape h4 {
+  color: #2c3e50;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.produto .preco {
+  font-size: 22px;
+  font-weight: bold;
+  color: #27ae60;
+  margin: 15px 0;
+}
+
+.marca {
+  display: inline-block;
+  background: #cbe5f6;
+  color: #0f3a57;
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 10px;
+}
